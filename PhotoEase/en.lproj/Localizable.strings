@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  PhotoEase
+
+  Created by Son on 27/02/2025.
+  
+*/
+
+"Photo List" = "Photo List";
+"Photo List (Favorite)" = "Photo List (Favorite)";
+"Search Photo" = "Search Photo";
+"No Photos" = "No Photos";
+"Photo Detail" = "Photo Detail";
+"Are you sure to dislike this photo?" = "Are you sure to dislike this photo?";
+"Action-Title-Confirm" = "Sure";
+"Action-Title-Cancel" = "Cancel";
+"Error" = "Error";
+"Action-Title-Close" = "OK";

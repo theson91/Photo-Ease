@@ -1,0 +1,924 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		543EF8D82CF4662500069F25 /* PhotoEaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EF8D72CF4662500069F25 /* PhotoEaseApp.swift */; };
+		543EF8DA2CF4662500069F25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EF8D92CF4662500069F25 /* ContentView.swift */; };
+		543EF8DC2CF4662600069F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 543EF8DB2CF4662600069F25 /* Assets.xcassets */; };
+		543EF8DF2CF4662600069F25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 543EF8DE2CF4662600069F25 /* Preview Assets.xcassets */; };
+		543EF8E92CF4662600069F25 /* PhotoEaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EF8E82CF4662600069F25 /* PhotoEaseTests.swift */; };
+		543EF8F32CF4662600069F25 /* PhotoEaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EF8F22CF4662600069F25 /* PhotoEaseUITests.swift */; };
+		543EF8F52CF4662600069F25 /* PhotoEaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543EF8F42CF4662600069F25 /* PhotoEaseUITestsLaunchTests.swift */; };
+		6EE57D13E02F44024DEBC68A /* Pods_PhotoEaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC5201278C73670CFB306F5 /* Pods_PhotoEaseTests.framework */; };
+		C7804C16D9C290B96F6D6AC7 /* Pods_PhotoEase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D099F3D436560394D0C814 /* Pods_PhotoEase.framework */; };
+		DEC3C4147359811B5EE3007A /* Pods_PhotoEase_PhotoEaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC429B89FE9343EFB59FA823 /* Pods_PhotoEase_PhotoEaseUITests.framework */; };
+		E7009ED82D75B038007D1050 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E7009ED72D75B037007D1050 /* README.md */; };
+		E77B80CF2D716C6900C27D5F /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B80CE2D716C6900C27D5F /* PhotoDetailViewController.swift */; };
+		E77B80D12D716C7800C27D5F /* PhotoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E77B80D02D716C7800C27D5F /* PhotoDetailViewController.xib */; };
+		E77B80D32D719A5E00C27D5F /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B80D22D719A5D00C27D5F /* AlertHelper.swift */; };
+		E77B80D52D719C9000C27D5F /* PhotoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B80D42D719C9000C27D5F /* PhotoDetailViewModel.swift */; };
+		E77B80DC2D71FD9D00C27D5F /* LoadMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B80DA2D71FD9D00C27D5F /* LoadMoreTableViewCell.swift */; };
+		E77B80DD2D71FD9D00C27D5F /* LoadMoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E77B80DB2D71FD9D00C27D5F /* LoadMoreTableViewCell.xib */; };
+		E7C7B67D2D707BD50018050C /* PhotosListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C7B67C2D707BD50018050C /* PhotosListViewController.swift */; };
+		E7C7B6802D707BF30018050C /* PhotosListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C7B67F2D707BF30018050C /* PhotosListViewController.xib */; };
+		E7C7B6832D7084EE0018050C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7C7B6852D7084EE0018050C /* Localizable.strings */; };
+		E7C7B68E2D708A5F0018050C /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C7B68D2D708A5F0018050C /* Photo.swift */; };
+		E7C7B6912D708BAB0018050C /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C7B68F2D708BAB0018050C /* PhotoTableViewCell.swift */; };
+		E7C7B6922D708BAB0018050C /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C7B6902D708BAB0018050C /* PhotoTableViewCell.xib */; };
+		E7C7B6952D708E300018050C /* PhotoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C7B6942D708E300018050C /* PhotoListViewModel.swift */; };
+		E7C7B69B2D70B7D20018050C /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7C7B6992D70B7D20018050C /* CoreData.xcdatamodeld */; };
+		E7C7B69E2D70B9AA0018050C /* PhotoDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C7B69D2D70B9AA0018050C /* PhotoDataHelper.swift */; };
+		E7C7B6A12D70BC9E0018050C /* ManagedPhoto+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C7B69F2D70BC9E0018050C /* ManagedPhoto+CoreDataClass.swift */; };
+		E7C7B6A22D70BC9E0018050C /* ManagedPhoto+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C7B6A02D70BC9E0018050C /* ManagedPhoto+CoreDataProperties.swift */; };
+		E7CE35E12D736DD800CF5E7F /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CE35E02D736DD800CF5E7F /* SplashScreenView.swift */; };
+		E7D644012D74777B009E6DB1 /* String+URLHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D644002D74777B009E6DB1 /* String+URLHelpers.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		543EF8E52CF4662600069F25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 543EF8CC2CF4662500069F25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 543EF8D32CF4662500069F25;
+			remoteInfo = PhotoEase;
+		};
+		543EF8EF2CF4662600069F25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 543EF8CC2CF4662500069F25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 543EF8D32CF4662500069F25;
+			remoteInfo = PhotoEase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FC5201278C73670CFB306F5 /* Pods_PhotoEaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoEaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30D099F3D436560394D0C814 /* Pods_PhotoEase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoEase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39B16D0100EF9DA5D9F7B189 /* Pods-PhotoEase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoEase.debug.xcconfig"; path = "Target Support Files/Pods-PhotoEase/Pods-PhotoEase.debug.xcconfig"; sourceTree = "<group>"; };
+		45D98E4B78570079003DE7D9 /* Pods-PhotoEaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoEaseTests.debug.xcconfig"; path = "Target Support Files/Pods-PhotoEaseTests/Pods-PhotoEaseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		543EF8D42CF4662500069F25 /* PhotoEase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoEase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		543EF8D72CF4662500069F25 /* PhotoEaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEaseApp.swift; sourceTree = "<group>"; };
+		543EF8D92CF4662500069F25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		543EF8DB2CF4662600069F25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		543EF8DE2CF4662600069F25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		543EF8E42CF4662600069F25 /* PhotoEaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoEaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		543EF8E82CF4662600069F25 /* PhotoEaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEaseTests.swift; sourceTree = "<group>"; };
+		543EF8EE2CF4662600069F25 /* PhotoEaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoEaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		543EF8F22CF4662600069F25 /* PhotoEaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEaseUITests.swift; sourceTree = "<group>"; };
+		543EF8F42CF4662600069F25 /* PhotoEaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7C61E39303F9439EA86F848C /* Pods-PhotoEase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoEase.release.xcconfig"; path = "Target Support Files/Pods-PhotoEase/Pods-PhotoEase.release.xcconfig"; sourceTree = "<group>"; };
+		7C75690A688498076639785A /* Pods-PhotoEase-PhotoEaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoEase-PhotoEaseUITests.debug.xcconfig"; path = "Target Support Files/Pods-PhotoEase-PhotoEaseUITests/Pods-PhotoEase-PhotoEaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		849DD2D91E1F10CA168845B5 /* Pods-PhotoEase-PhotoEaseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoEase-PhotoEaseUITests.release.xcconfig"; path = "Target Support Files/Pods-PhotoEase-PhotoEaseUITests/Pods-PhotoEase-PhotoEaseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9BC995183FBA79B82D2D0222 /* Pods-PhotoEaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoEaseTests.release.xcconfig"; path = "Target Support Files/Pods-PhotoEaseTests/Pods-PhotoEaseTests.release.xcconfig"; sourceTree = "<group>"; };
+		E7009ED72D75B037007D1050 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E77B80CE2D716C6900C27D5F /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
+		E77B80D02D716C7800C27D5F /* PhotoDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoDetailViewController.xib; sourceTree = "<group>"; };
+		E77B80D22D719A5D00C27D5F /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		E77B80D42D719C9000C27D5F /* PhotoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewModel.swift; sourceTree = "<group>"; };
+		E77B80DA2D71FD9D00C27D5F /* LoadMoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreTableViewCell.swift; sourceTree = "<group>"; };
+		E77B80DB2D71FD9D00C27D5F /* LoadMoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadMoreTableViewCell.xib; sourceTree = "<group>"; };
+		E7C7B67C2D707BD50018050C /* PhotosListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListViewController.swift; sourceTree = "<group>"; };
+		E7C7B67F2D707BF30018050C /* PhotosListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotosListViewController.xib; sourceTree = "<group>"; };
+		E7C7B6842D7084EE0018050C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E7C7B6872D7085850018050C /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E7C7B68D2D708A5F0018050C /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		E7C7B68F2D708BAB0018050C /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		E7C7B6902D708BAB0018050C /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
+		E7C7B6942D708E300018050C /* PhotoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewModel.swift; sourceTree = "<group>"; };
+		E7C7B69A2D70B7D20018050C /* ManagedPhoto.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ManagedPhoto.xcdatamodel; sourceTree = "<group>"; };
+		E7C7B69D2D70B9AA0018050C /* PhotoDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataHelper.swift; sourceTree = "<group>"; };
+		E7C7B69F2D70BC9E0018050C /* ManagedPhoto+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ManagedPhoto+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		E7C7B6A02D70BC9E0018050C /* ManagedPhoto+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ManagedPhoto+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		E7CE35E02D736DD800CF5E7F /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		E7D644002D74777B009E6DB1 /* String+URLHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+URLHelpers.swift"; sourceTree = "<group>"; };
+		FC429B89FE9343EFB59FA823 /* Pods_PhotoEase_PhotoEaseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoEase_PhotoEaseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		543EF8D12CF4662500069F25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7804C16D9C290B96F6D6AC7 /* Pods_PhotoEase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543EF8E12CF4662600069F25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE57D13E02F44024DEBC68A /* Pods_PhotoEaseTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543EF8EB2CF4662600069F25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEC3C4147359811B5EE3007A /* Pods_PhotoEase_PhotoEaseUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50FEB4596703574EBFEF9FA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39B16D0100EF9DA5D9F7B189 /* Pods-PhotoEase.debug.xcconfig */,
+				7C61E39303F9439EA86F848C /* Pods-PhotoEase.release.xcconfig */,
+				7C75690A688498076639785A /* Pods-PhotoEase-PhotoEaseUITests.debug.xcconfig */,
+				849DD2D91E1F10CA168845B5 /* Pods-PhotoEase-PhotoEaseUITests.release.xcconfig */,
+				45D98E4B78570079003DE7D9 /* Pods-PhotoEaseTests.debug.xcconfig */,
+				9BC995183FBA79B82D2D0222 /* Pods-PhotoEaseTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		543EF8CB2CF4662500069F25 = {
+			isa = PBXGroup;
+			children = (
+				543EF8D62CF4662500069F25 /* PhotoEase */,
+				543EF8E72CF4662600069F25 /* PhotoEaseTests */,
+				543EF8F12CF4662600069F25 /* PhotoEaseUITests */,
+				543EF8D52CF4662500069F25 /* Products */,
+				50FEB4596703574EBFEF9FA3 /* Pods */,
+				86656040B0F35BB64EA1785C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		543EF8D52CF4662500069F25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				543EF8D42CF4662500069F25 /* PhotoEase.app */,
+				543EF8E42CF4662600069F25 /* PhotoEaseTests.xctest */,
+				543EF8EE2CF4662600069F25 /* PhotoEaseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		543EF8D62CF4662500069F25 /* PhotoEase */ = {
+			isa = PBXGroup;
+			children = (
+				E7D643FF2D747749009E6DB1 /* Extensions */,
+				E7C7B69C2D70B9950018050C /* Helpers */,
+				E7C7B6932D708E150018050C /* ViewModels */,
+				E7C7B68C2D708A470018050C /* Models */,
+				E7C7B67B2D707B530018050C /* UIKit */,
+				E7C7B67A2D707B3F0018050C /* SwiftUI */,
+				543EF8DD2CF4662600069F25 /* Preview Content */,
+				543EF8DB2CF4662600069F25 /* Assets.xcassets */,
+				E7C7B6852D7084EE0018050C /* Localizable.strings */,
+				E7009ED72D75B037007D1050 /* README.md */,
+			);
+			path = PhotoEase;
+			sourceTree = "<group>";
+		};
+		543EF8DD2CF4662600069F25 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				543EF8DE2CF4662600069F25 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		543EF8E72CF4662600069F25 /* PhotoEaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				543EF8E82CF4662600069F25 /* PhotoEaseTests.swift */,
+			);
+			path = PhotoEaseTests;
+			sourceTree = "<group>";
+		};
+		543EF8F12CF4662600069F25 /* PhotoEaseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				543EF8F22CF4662600069F25 /* PhotoEaseUITests.swift */,
+				543EF8F42CF4662600069F25 /* PhotoEaseUITestsLaunchTests.swift */,
+			);
+			path = PhotoEaseUITests;
+			sourceTree = "<group>";
+		};
+		86656040B0F35BB64EA1785C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30D099F3D436560394D0C814 /* Pods_PhotoEase.framework */,
+				FC429B89FE9343EFB59FA823 /* Pods_PhotoEase_PhotoEaseUITests.framework */,
+				0FC5201278C73670CFB306F5 /* Pods_PhotoEaseTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E77B80CD2D716C5300C27D5F /* PhotoDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E77B80CE2D716C6900C27D5F /* PhotoDetailViewController.swift */,
+				E77B80D02D716C7800C27D5F /* PhotoDetailViewController.xib */,
+			);
+			path = PhotoDetail;
+			sourceTree = "<group>";
+		};
+		E7C7B67A2D707B3F0018050C /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				543EF8D72CF4662500069F25 /* PhotoEaseApp.swift */,
+				543EF8D92CF4662500069F25 /* ContentView.swift */,
+				E7CE35E02D736DD800CF5E7F /* SplashScreenView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		E7C7B67B2D707B530018050C /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				E77B80CD2D716C5300C27D5F /* PhotoDetail */,
+				E7C7B67E2D707BDA0018050C /* PhotosList */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		E7C7B67E2D707BDA0018050C /* PhotosList */ = {
+			isa = PBXGroup;
+			children = (
+				E7C7B67C2D707BD50018050C /* PhotosListViewController.swift */,
+				E7C7B67F2D707BF30018050C /* PhotosListViewController.xib */,
+				E7C7B68F2D708BAB0018050C /* PhotoTableViewCell.swift */,
+				E7C7B6902D708BAB0018050C /* PhotoTableViewCell.xib */,
+				E77B80DA2D71FD9D00C27D5F /* LoadMoreTableViewCell.swift */,
+				E77B80DB2D71FD9D00C27D5F /* LoadMoreTableViewCell.xib */,
+			);
+			path = PhotosList;
+			sourceTree = "<group>";
+		};
+		E7C7B68C2D708A470018050C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E7C7B68D2D708A5F0018050C /* Photo.swift */,
+				E7C7B69F2D70BC9E0018050C /* ManagedPhoto+CoreDataClass.swift */,
+				E7C7B6A02D70BC9E0018050C /* ManagedPhoto+CoreDataProperties.swift */,
+				E7C7B6992D70B7D20018050C /* CoreData.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E7C7B6932D708E150018050C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E7C7B6942D708E300018050C /* PhotoListViewModel.swift */,
+				E77B80D42D719C9000C27D5F /* PhotoDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E7C7B69C2D70B9950018050C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E7C7B69D2D70B9AA0018050C /* PhotoDataHelper.swift */,
+				E77B80D22D719A5D00C27D5F /* AlertHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E7D643FF2D747749009E6DB1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E7D644002D74777B009E6DB1 /* String+URLHelpers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		543EF8D32CF4662500069F25 /* PhotoEase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 543EF8F82CF4662600069F25 /* Build configuration list for PBXNativeTarget "PhotoEase" */;
+			buildPhases = (
+				1B11E221328960D4AA339D7B /* [CP] Check Pods Manifest.lock */,
+				543EF8D02CF4662500069F25 /* Sources */,
+				543EF8D12CF4662500069F25 /* Frameworks */,
+				543EF8D22CF4662500069F25 /* Resources */,
+				0C283013592DF21F15C2A875 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoEase;
+			productName = PhotoEase;
+			productReference = 543EF8D42CF4662500069F25 /* PhotoEase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		543EF8E32CF4662600069F25 /* PhotoEaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 543EF8FB2CF4662600069F25 /* Build configuration list for PBXNativeTarget "PhotoEaseTests" */;
+			buildPhases = (
+				57ABD253E08E2DED229CA0A3 /* [CP] Check Pods Manifest.lock */,
+				543EF8E02CF4662600069F25 /* Sources */,
+				543EF8E12CF4662600069F25 /* Frameworks */,
+				543EF8E22CF4662600069F25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				543EF8E62CF4662600069F25 /* PBXTargetDependency */,
+			);
+			name = PhotoEaseTests;
+			productName = PhotoEaseTests;
+			productReference = 543EF8E42CF4662600069F25 /* PhotoEaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		543EF8ED2CF4662600069F25 /* PhotoEaseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 543EF8FE2CF4662600069F25 /* Build configuration list for PBXNativeTarget "PhotoEaseUITests" */;
+			buildPhases = (
+				A806F645D19201859CEB78A9 /* [CP] Check Pods Manifest.lock */,
+				543EF8EA2CF4662600069F25 /* Sources */,
+				543EF8EB2CF4662600069F25 /* Frameworks */,
+				543EF8EC2CF4662600069F25 /* Resources */,
+				FB09C864C6AD2766CD014B25 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				543EF8F02CF4662600069F25 /* PBXTargetDependency */,
+			);
+			name = PhotoEaseUITests;
+			productName = PhotoEaseUITests;
+			productReference = 543EF8EE2CF4662600069F25 /* PhotoEaseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		543EF8CC2CF4662500069F25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					543EF8D32CF4662500069F25 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					543EF8E32CF4662600069F25 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 543EF8D32CF4662500069F25;
+					};
+					543EF8ED2CF4662600069F25 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 543EF8D32CF4662500069F25;
+					};
+				};
+			};
+			buildConfigurationList = 543EF8CF2CF4662500069F25 /* Build configuration list for PBXProject "PhotoEase" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				vi,
+			);
+			mainGroup = 543EF8CB2CF4662500069F25;
+			productRefGroup = 543EF8D52CF4662500069F25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				543EF8D32CF4662500069F25 /* PhotoEase */,
+				543EF8E32CF4662600069F25 /* PhotoEaseTests */,
+				543EF8ED2CF4662600069F25 /* PhotoEaseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		543EF8D22CF4662500069F25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E77B80D12D716C7800C27D5F /* PhotoDetailViewController.xib in Resources */,
+				543EF8DF2CF4662600069F25 /* Preview Assets.xcassets in Resources */,
+				E7C7B6832D7084EE0018050C /* Localizable.strings in Resources */,
+				E7C7B6922D708BAB0018050C /* PhotoTableViewCell.xib in Resources */,
+				E7C7B6802D707BF30018050C /* PhotosListViewController.xib in Resources */,
+				543EF8DC2CF4662600069F25 /* Assets.xcassets in Resources */,
+				E7009ED82D75B038007D1050 /* README.md in Resources */,
+				E77B80DD2D71FD9D00C27D5F /* LoadMoreTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543EF8E22CF4662600069F25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543EF8EC2CF4662600069F25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C283013592DF21F15C2A875 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoEase/Pods-PhotoEase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoEase/Pods-PhotoEase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhotoEase/Pods-PhotoEase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B11E221328960D4AA339D7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoEase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57ABD253E08E2DED229CA0A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoEaseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A806F645D19201859CEB78A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoEase-PhotoEaseUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB09C864C6AD2766CD014B25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoEase-PhotoEaseUITests/Pods-PhotoEase-PhotoEaseUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoEase-PhotoEaseUITests/Pods-PhotoEase-PhotoEaseUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhotoEase-PhotoEaseUITests/Pods-PhotoEase-PhotoEaseUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		543EF8D02CF4662500069F25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E77B80D32D719A5E00C27D5F /* AlertHelper.swift in Sources */,
+				E7C7B69B2D70B7D20018050C /* CoreData.xcdatamodeld in Sources */,
+				E7CE35E12D736DD800CF5E7F /* SplashScreenView.swift in Sources */,
+				E7C7B6912D708BAB0018050C /* PhotoTableViewCell.swift in Sources */,
+				E7D644012D74777B009E6DB1 /* String+URLHelpers.swift in Sources */,
+				E7C7B6952D708E300018050C /* PhotoListViewModel.swift in Sources */,
+				543EF8DA2CF4662500069F25 /* ContentView.swift in Sources */,
+				E7C7B69E2D70B9AA0018050C /* PhotoDataHelper.swift in Sources */,
+				E77B80CF2D716C6900C27D5F /* PhotoDetailViewController.swift in Sources */,
+				E7C7B67D2D707BD50018050C /* PhotosListViewController.swift in Sources */,
+				E7C7B6A22D70BC9E0018050C /* ManagedPhoto+CoreDataProperties.swift in Sources */,
+				E7C7B6A12D70BC9E0018050C /* ManagedPhoto+CoreDataClass.swift in Sources */,
+				543EF8D82CF4662500069F25 /* PhotoEaseApp.swift in Sources */,
+				E77B80D52D719C9000C27D5F /* PhotoDetailViewModel.swift in Sources */,
+				E77B80DC2D71FD9D00C27D5F /* LoadMoreTableViewCell.swift in Sources */,
+				E7C7B68E2D708A5F0018050C /* Photo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543EF8E02CF4662600069F25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543EF8E92CF4662600069F25 /* PhotoEaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543EF8EA2CF4662600069F25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543EF8F32CF4662600069F25 /* PhotoEaseUITests.swift in Sources */,
+				543EF8F52CF4662600069F25 /* PhotoEaseUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		543EF8E62CF4662600069F25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 543EF8D32CF4662500069F25 /* PhotoEase */;
+			targetProxy = 543EF8E52CF4662600069F25 /* PBXContainerItemProxy */;
+		};
+		543EF8F02CF4662600069F25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 543EF8D32CF4662500069F25 /* PhotoEase */;
+			targetProxy = 543EF8EF2CF4662600069F25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E7C7B6852D7084EE0018050C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7C7B6842D7084EE0018050C /* en */,
+				E7C7B6872D7085850018050C /* vi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		543EF8F62CF4662600069F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		543EF8F72CF4662600069F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		543EF8F92CF4662600069F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39B16D0100EF9DA5D9F7B189 /* Pods-PhotoEase.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PhotoEase/Preview Content\"";
+				DEVELOPMENT_TEAM = DX45QJ2374;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiohealth.test.cicd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		543EF8FA2CF4662600069F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C61E39303F9439EA86F848C /* Pods-PhotoEase.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PhotoEase/Preview Content\"";
+				DEVELOPMENT_TEAM = DX45QJ2374;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiohealth.test.cicd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		543EF8FC2CF4662600069F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45D98E4B78570079003DE7D9 /* Pods-PhotoEaseTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.slasify.PhotoEaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoEase.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhotoEase";
+			};
+			name = Debug;
+		};
+		543EF8FD2CF4662600069F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BC995183FBA79B82D2D0222 /* Pods-PhotoEaseTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.slasify.PhotoEaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoEase.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhotoEase";
+			};
+			name = Release;
+		};
+		543EF8FF2CF4662600069F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C75690A688498076639785A /* Pods-PhotoEase-PhotoEaseUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.slasify.PhotoEaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhotoEase;
+			};
+			name = Debug;
+		};
+		543EF9002CF4662600069F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 849DD2D91E1F10CA168845B5 /* Pods-PhotoEase-PhotoEaseUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.slasify.PhotoEaseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhotoEase;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		543EF8CF2CF4662500069F25 /* Build configuration list for PBXProject "PhotoEase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				543EF8F62CF4662600069F25 /* Debug */,
+				543EF8F72CF4662600069F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		543EF8F82CF4662600069F25 /* Build configuration list for PBXNativeTarget "PhotoEase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				543EF8F92CF4662600069F25 /* Debug */,
+				543EF8FA2CF4662600069F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		543EF8FB2CF4662600069F25 /* Build configuration list for PBXNativeTarget "PhotoEaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				543EF8FC2CF4662600069F25 /* Debug */,
+				543EF8FD2CF4662600069F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		543EF8FE2CF4662600069F25 /* Build configuration list for PBXNativeTarget "PhotoEaseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				543EF8FF2CF4662600069F25 /* Debug */,
+				543EF9002CF4662600069F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E7C7B6992D70B7D20018050C /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E7C7B69A2D70B7D20018050C /* ManagedPhoto.xcdatamodel */,
+			);
+			currentVersion = E7C7B69A2D70B7D20018050C /* ManagedPhoto.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 543EF8CC2CF4662500069F25 /* Project object */;
+}

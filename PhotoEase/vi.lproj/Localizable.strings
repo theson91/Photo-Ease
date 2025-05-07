@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  PhotoEase
+
+  Created by Son on 27/02/2025.
+  
+*/
+
+"Photo List" = "Ảnh";
+"Photo List (Favorite)" = "Ảnh yêu thích";
+"Search Photo" = "Tìm ảnh";
+"No Photos" = "Không có ảnh nào";
+"Photo Detail" = "Chi tiết ảnh";
+"Are you sure to dislike this photo?" = "Bạn muốn bỏ tấm ảnh này khỏi danh mục yêu thích?";
+"Action-Title-Confirm" = "Có";
+"Action-Title-Cancel" = "Không";
+"Error" = "Lỗi";
+"Action-Title-Close" = "OK"; // OK is okay in Vetnamese 
