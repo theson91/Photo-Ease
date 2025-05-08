@@ -1,0 +1,27 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Push a new beta build to TestFlight"
+  lane :beta do
+    increment_build_number(xcodeproj: "PhotoEase.xcodeproj")
+
+    build_app(
+      workspace: "PhotoEase.xcworkspace",
+      scheme: "PhotoEase",
+      export_method: "app-store", 
+      export_options: {
+        provisioningProfiles: {
+          "com.jiohealth.consumer.dev" => "com.jiohealth.consumer.dev"
+        }
+      },
+      output_directory: "./build/beta",
+      export_xcargs: "-allowProvisioningUpdates"
+    )
+
+    upload_to_testflight(
+      username: "son.bui@jiohealth.com",
+      app_identifier: "com.jiohealth.consumer.dev",
+      team_id: "DX45QJ2374"
+    )
+  end
+end

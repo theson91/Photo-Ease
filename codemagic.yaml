@@ -1,0 +1,61 @@
+workflows:
+  ios-native-photoEase:
+    name: Build PhotoEase iOS
+    max_build_duration: 120
+    instance_type: mac_pro # or mac_mini (chip Intel)
+
+    integrations:
+      app_store_connect: codemagic
+
+    environment:
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: com.jiohealth.consumer.dev
+      vars:
+        BUNDLE_ID: "com.jiohealth.consumer.dev"
+        XCODE_WORKSPACE: "PhotoEase.xcworkspace"
+        XCODE_SCHEME: "PhotoEase"
+        APP_STORE_APPLE_ID: 964757253
+      xcode: 16.3
+      cocoapods: default
+
+    scripts:
+      - name: Install CocoaPods dependencies
+        script: |
+          pod install
+
+      - name: Set up provisioning profiles
+        script: |
+          xcode-project use-profiles
+
+      - name: Increment build number
+        script: |
+          cd $CM_BUILD_DIR
+          LATEST_BUILD_NUMBER=$(app-store-connect get-latest-app-store-build-number "$APP_STORE_APPLE_ID")
+          agvtool new-version -all $(($LATEST_BUILD_NUMBER + 1))
+
+      - name: Build .ipa
+        script: |
+          xcode-project build-ipa \
+            --workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
+            --scheme "$XCODE_SCHEME"
+
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+
+    publishing:
+      email:
+        recipients:
+          - son.bui@jiohealth.com
+        notify:
+          success: true
+          failure: true
+      app_store_connect:
+        auth: integration
+        submit_to_testflight: true
+#        beta_groups:
+#          - Internal Testers
+        submit_to_app_store: false
